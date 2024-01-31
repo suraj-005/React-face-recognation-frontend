@@ -1,0 +1,252 @@
+/* Style for the entire application */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../assets/imgs/bkg.jpg);
+  background-size: cover;
+}
+
+/* Style for the App component container */
+.app {
+  width: 100%; /* Set width to 100% */
+  height: 100vh; /* Fix the height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0; /* Remove margins */
+}
+
+/* Style for the MasterComponent container */
+.master-component {
+  display: flex;
+  margin: 50px;
+  height: 600px;
+}
+
+/* Style for the Webcam component container */
+.webcam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 800px;
+  height: 600px;
+}
+
+video {
+  margin: auto; /* aligns element to center */
+  width: 800px; /*set the width*/
+  height: 600px; /*set the height*/
+}
+
+
+canvas {
+  display: none; /* make the canvas not visible */
+}
+
+.buttons-container {
+  position: relative; /* This is the parent container */
+  flex-direction: column; /* stack them vertically */
+  margin-left: 20px; /* add a margin to separate them from the webcam container */
+  width: 200px;
+  height: 100%;
+  margin-top: auto;
+}
+
+.register-ok-button,
+.register-cancel-button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; /* Green for OK button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px; /* Adjust margin as needed */
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.register-cancel-button {
+  background-color: #f44336; /* Red for Cancel button */
+}
+
+.register-ok-button:hover,
+.register-cancel-button:hover {
+  background-color: #45a049; /* Darker shade for hover effect */
+}
+
+
+.login-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+
+}
+
+.register-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+
+}
+
+.goback-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+}
+
+.download-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+
+}
+
+.login-container {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.goback-container {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.download-container {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.register-text-container {
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  top: 80px;
+
+}
+
+.register-text {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 40px; /* Adjust height as needed */
+  font-size: 16px; /* Decreased font size for better visual balance */
+  padding: 8px; /* Added padding for better spacing */
+  border: 1px solid #ccc; /* Added a subtle border for clarity */
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  outline: none;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.register-text:focus {
+  border-color: #4caf50; /* Change border color on focus for better feedback */
+}
+
+.register-ok-container {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.register-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.register-cancel-container {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.login-button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+.register-ok:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+.logout-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+}
+
+.logout-button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+.logout-container {
+  z-index: 2;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+} 
+
+.admin-button {
+  transition-duration: 0.4s;
+  width:100%;
+  height: 200px;
+  font-size: 30px;
+}
+
+.admin-button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+.admin-container {
+  z-index: 2;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+} 
+
+
+
+.hidden {
+  visibility: hidden;
+  transition: visibility 0.05s;
+}
+
+.visible {
+  visibility: visible;
+  transition: visibility 0.5s;
+}
+
